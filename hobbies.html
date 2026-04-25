@@ -4,7 +4,7 @@
 <style data-styles="">slot-fb{display:contents}slot-fb[hidden]{display:none}presto-playlist,presto-player-skeleton,presto-timestamp,presto-video-curtain-ui,presto-search-bar-ui,presto-player-button,presto-cta-overlay-ui,presto-video,presto-action-bar-ui,presto-youtube-subscribe-button,presto-email-overlay-ui,presto-player-spinner,presto-action-bar,presto-cta-overlay,presto-email-overlay,presto-bunny,presto-dynamic-overlays,presto-search-bar,presto-youtube,presto-audio,presto-business-skin,presto-modern-skin,presto-muted-overlay,presto-stacked-skin,presto-vimeo,presto-action-bar-controller,presto-cta-overlay-controller,presto-email-overlay-controller,presto-dynamic-overlay-ui,presto-player,presto-playlist-item,presto-playlist-overlay,presto-playlist-ui{visibility:hidden}.hydrated{visibility:inherit}</style>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11"> 
-	<title>emregundogdu.net</title>
+	<title>emregundogdu.net - Hobbies</title>
 <meta name="robots" content="max-image-preview:large">
 	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
 	<link rel="dns-prefetch" href="https://fonts.googleapis.com/">
@@ -502,7 +502,26 @@ var starter_templates_zip_preview = {"AstColorPaletteVarPrefix":"--ast-global-co
 
 
 
-</body></html>
+<script id="route-content-script">
+(function(){
+  var entry = document.querySelector('.entry-content');
+  if(!entry) return;
+  var start = document.getElementById('hobbies-section');
+  var end = document.getElementById('contact-section');
+  if(!start) return;
+  var startBlock = start.closest('.wp-block-uagb-info-box, .wp-block-group, .wp-block-column') || start;
+  var endBlock = end ? (end.closest('.wp-block-uagb-info-box, .wp-block-group, .wp-block-column') || end) : null;
+  var nodes = [];
+  var cur = startBlock;
+  while(cur && cur !== endBlock){
+    nodes.push(cur.cloneNode(true));
+    cur = cur.nextElementSibling;
+  }
+  entry.innerHTML = '';
+  nodes.forEach(function(n){ entry.appendChild(n); });
+})();
+</script></body></html>
+
 
 
 
