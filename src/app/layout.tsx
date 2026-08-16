@@ -34,6 +34,11 @@ const defaultSite = dictionaries.tr.site;
 export const metadata: Metadata = {
   title: `${defaultSite.name} — AI Developer & Project Manager`,
   description: defaultSite.bio,
+  icons: {
+    icon: [{ url: "/brand/logo.svg", type: "image/svg+xml" }],
+    shortcut: "/brand/logo.svg",
+    apple: "/brand/logo.svg",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
