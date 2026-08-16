@@ -4,9 +4,11 @@ import Image from "next/image";
 import { Reveal } from "@/components/motion/reveal";
 import { Section } from "@/components/layout/section";
 import { SplineScene } from "@/components/ui/splite";
-import { about } from "@/lib/content";
+import { useLocale } from "@/i18n/locale-provider";
 
 export function AboutSection() {
+  const { about, site } = useLocale();
+
   return (
     <Section
       id="about"
@@ -37,7 +39,7 @@ export function AboutSection() {
             <div className="relative mt-2 flex h-14 items-center sm:mt-4 sm:h-16">
               <Image
                 src="/brand/logo.svg"
-                alt="Emre Gündoğdu"
+                alt={site.name}
                 width={173}
                 height={171}
                 className="h-10 w-auto object-contain opacity-90 sm:h-12"

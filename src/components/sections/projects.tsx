@@ -15,19 +15,27 @@ import { BentoGrid, bentoSpanClass } from "@/components/effects/bento-grid";
 import { GlowCard } from "@/components/effects/glow-card";
 import { Reveal } from "@/components/motion/reveal";
 import { Section } from "@/components/layout/section";
-import { projects } from "@/lib/content";
+import { useLocale } from "@/i18n/locale-provider";
 import type { ProjectItem } from "@/types/content";
 
-function ProjectCard({ project, index }: { project: ProjectItem; index: number }) {
+function ProjectCard({
+  project,
+  index,
+  detailsLabel,
+  openSiteLabel,
+}: {
+  project: ProjectItem;
+  index: number;
+  detailsLabel: string;
+  openSiteLabel: string;
+}) {
   return (
     <Reveal delay={index * 0.06} className={bentoSpanClass(project.span)}>
       <Dialog>
         <GlowCard className="h-full">
           <article className="flex h-full min-h-[200px] flex-col justify-between rounded-2xl border border-white/8 bg-white/4 p-5 backdrop-blur-xl sm:min-h-[220px] sm:p-6">
             <div>
-              <p className="text-xs text-zinc-500">
-                {project.subtitle}
-              </p>
+              <p className="text-xs text-zinc-500">{project.subtitle}</p>
               <h3 className="mt-3 text-xl font-semibold tracking-tight">
                 {project.title}
               </h3>
@@ -55,7 +63,7 @@ function ProjectCard({ project, index }: { project: ProjectItem; index: number }
                   />
                 }
               >
-                Detay
+                {detailsLabel}
                 <ArrowUpRight className="size-4" />
               </DialogTrigger>
             </div>
@@ -84,7 +92,7 @@ function ProjectCard({ project, index }: { project: ProjectItem; index: number }
               }
               className="h-10 bg-cyan-300 text-slate-950 hover:bg-cyan-200"
             >
-              Siteyi aç
+              {openSiteLabel}
               <ArrowUpRight className="size-4" />
             </Button>
           ) : null}
@@ -95,16 +103,24 @@ function ProjectCard({ project, index }: { project: ProjectItem; index: number }
 }
 
 export function ProjectsSection() {
+  const { projects, ui } = useLocale();
+
   return (
     <Section
       id="projects"
-      eyebrow="Üretim"
-      title="Projeler & Girişimler"
-      description="Tıklanabilir bento kartları. Her ürün canlı problemleri çözen bir sistem."
+      eyebrow={ui.projectsEyebrow}
+      title={ui.projectsTitle}
+      description={ui.projectsDescription}
     >
       <BentoGrid>
         {projects.map((project, index) => (
-          <ProjectCard key={project.id} project={project} index={index} />
+          <ProjectCard
+            key={project.id}
+            project={project}
+            index={index}
+            detailsLabel={ui.projectDetails}
+            openSiteLabel={ui.openSite}
+          />
         ))}
       </BentoGrid>
     </Section>

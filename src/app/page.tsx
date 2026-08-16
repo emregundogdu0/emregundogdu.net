@@ -1,13 +1,13 @@
 import { AboutSection } from "@/components/sections/about";
 import { AchievementsSection } from "@/components/sections/achievements";
 import { ContactSection } from "@/components/sections/contact";
+import { EducationSection } from "@/components/sections/education";
 import { ExperienceSection } from "@/components/sections/experience";
 import { HeroSection } from "@/components/sections/hero";
 import { PartnersMarquee } from "@/components/sections/partners";
 import { PhotoReel } from "@/components/sections/photo-reel";
 import { ProjectsSection } from "@/components/sections/projects";
 import { SkillsSection } from "@/components/sections/skills";
-import { StatementBand } from "@/components/sections/statement";
 
 export default function Home() {
   return (
@@ -16,7 +16,7 @@ export default function Home() {
       <PartnersMarquee />
       <AboutSection />
       <PhotoReel />
-      <StatementBand />
+      <EducationSection />
       <ExperienceSection />
       <ProjectsSection />
       <AchievementsSection />
@@ -25,4 +25,3 @@ export default function Home() {
     </main>
   );
 }
-

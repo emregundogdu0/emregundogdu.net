@@ -1,0 +1,19 @@
+{
+  "title": "About",
+  "eyebrow": "Campus, stage, field",
+  "intro": "I study Computer Engineering at METU Northern Cyprus Campus. From systems-level work to production AI products, I build readable, scalable software.",
+  "focus": [
+    {
+      "title": "Systems & Performance",
+      "body": "Systems programming with C and Python, data-structure optimization, and high-performance software architecture."
+    },
+    {
+      "title": "AI / ML Systems",
+      "body": "LLMs, computer vision, and end-to-end model-to-service integration: not research demos—systems that ship."
+    },
+    {
+      "title": "Rhythm & Discipline",
+      "body": "Licensed basketball player, licensed swimmer, and drummer in a band. Discipline, teamwork, and rhythm carry into engineering."
+    }
+  ]
+}

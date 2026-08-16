@@ -1,0 +1,20 @@
+[
+  {
+    "id": "metu-ncc",
+    "school": "Orta Doğu Teknik Üniversitesi",
+    "program": "Bilgisayar Mühendisliği",
+    "period": "Devam ediyor",
+    "location": "ODTÜ Kuzey Kıbrıs Kampüsü",
+    "logo": "/education/odtu.png",
+    "body": "ODTÜ, Türkiye’nin en köklü ve en seçici teknik üniversitelerinden biri. Bilgisayar Mühendisliği programında sistemler, yapay zeka ve üretim odaklı yazılım üzerine çalışıyorum."
+  },
+  {
+    "id": "izmir-ataturk",
+    "school": "İzmir Atatürk Lisesi",
+    "program": "Lise",
+    "period": "Mezun",
+    "location": "İzmir",
+    "logo": "/education/izmir-ataturk-lisesi.png",
+    "body": "İzmir Atatürk Lisesi, Türkiye’nin en köklü ve en başarılı liselerinden biri. Disiplin, akademik temeli ve rekabetçi ortamıyla mühendislik yolumu şekillendiren okul."
+  }
+]

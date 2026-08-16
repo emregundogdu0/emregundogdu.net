@@ -1,0 +1,20 @@
+[
+  {
+    "id": "metu-ncc",
+    "school": "Middle East Technical University",
+    "program": "Computer Engineering",
+    "period": "Ongoing",
+    "location": "METU Northern Cyprus Campus",
+    "logo": "/education/odtu.png",
+    "body": "METU is one of Turkey’s most established and selective technical universities. In Computer Engineering I focus on systems, AI, and production-minded software."
+  },
+  {
+    "id": "izmir-ataturk",
+    "school": "Izmir Ataturk High School",
+    "program": "High School",
+    "period": "Graduate",
+    "location": "Izmir",
+    "logo": "/education/izmir-ataturk-lisesi.png",
+    "body": "Izmir Ataturk High School is one of Turkey’s most established and successful high schools. Its discipline, academic foundation, and competitive culture shaped my path into engineering."
+  }
+]

@@ -1,18 +1,21 @@
+"use client";
+
 import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 import { Reveal } from "@/components/motion/reveal";
 import { Section } from "@/components/layout/section";
-import { skills, technologies } from "@/lib/content";
-
-const techByName = new Map(technologies.map((tech) => [tech.name, tech]));
+import { useLocale } from "@/i18n/locale-provider";
 
 export function SkillsSection() {
+  const { skills, technologies, ui } = useLocale();
+  const techByName = new Map(technologies.map((tech) => [tech.name, tech]));
+
   return (
     <Section
       id="skills"
-      eyebrow="Stack"
-      title="Yetkinlikler"
-      description="Üretimde kullandığım diller, AI yığını ve altyapı."
+      eyebrow={ui.skillsEyebrow}
+      title={ui.skillsTitle}
+      description={ui.skillsDescription}
     >
       <div className="mb-8 grid grid-cols-2 gap-2.5 sm:mb-10 sm:grid-cols-3 sm:gap-3 md:grid-cols-5">
         {technologies.map((tech, index) => (

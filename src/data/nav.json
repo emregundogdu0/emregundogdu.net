@@ -1,5 +1,6 @@
 [
   { "label": "Hakkımda", "href": "#about" },
+  { "label": "Eğitim", "href": "#education" },
   { "label": "Deneyim", "href": "#experience" },
   { "label": "Projeler", "href": "#projects" },
   { "label": "Başarılar", "href": "#achievements" },

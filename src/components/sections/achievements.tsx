@@ -1,8 +1,10 @@
+"use client";
+
 import { Gamepad2, Trophy } from "lucide-react";
 import { Reveal } from "@/components/motion/reveal";
 import { GlowCard } from "@/components/effects/glow-card";
 import { Section } from "@/components/layout/section";
-import { achievements } from "@/lib/content";
+import { useLocale } from "@/i18n/locale-provider";
 
 const icons = {
   trophy: Trophy,
@@ -10,11 +12,13 @@ const icons = {
 };
 
 export function AchievementsSection() {
+  const { achievements, ui } = useLocale();
+
   return (
     <Section
       id="achievements"
-      eyebrow="Kanıt"
-      title="Başarılar & Ödüller"
+      eyebrow={ui.achievementsEyebrow}
+      title={ui.achievementsTitle}
     >
       <div className="grid gap-4 md:grid-cols-2">
         {achievements.map((item, index) => {

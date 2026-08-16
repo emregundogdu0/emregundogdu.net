@@ -1,0 +1,57 @@
+[
+  {
+    "id": "emy-solutions",
+    "title": "Emy Software Studios Solutions",
+    "subtitle": "Enterprise AI & CRM",
+    "summary": "KKTC IMO CRM panel, Alfa Emlak AI sales assistant, and Viptech web products. Production systems that accelerate enterprise workflows with LLMs and automation.",
+    "description": "A product family built under METU KALTEV: CRM for the KKTC Chamber of Civil Engineers, an AI sales agent for Alfa Emlak, and Viptech corporate web. Shared thread: real users, real data, live environments.",
+    "tech": ["Next.js", "Python", "LLM", "CRM/ERP", "PostgreSQL"],
+    "featured": true,
+    "span": "lg",
+    "href": null
+  },
+  {
+    "id": "cyper",
+    "title": "Cyper",
+    "subtitle": "AI-Powered Service Platform",
+    "summary": "Smart service and recommendation matching platform.",
+    "description": "An AI matching layer that understands user needs, ranks services, and continuously improves the recommendation loop.",
+    "tech": ["TypeScript", "RAG", "Recommendation", "Node.js"],
+    "featured": false,
+    "span": "md",
+    "href": null
+  },
+  {
+    "id": "ncc-hocam",
+    "title": "NCC Hocam",
+    "subtitle": "AI Student Platform",
+    "summary": "Academic assistant and course optimization platform.",
+    "description": "An academic AI assistant that brings course planning, resources, and Q&A into one place for students.",
+    "tech": ["Next.js", "LLM", "RAG", "Education"],
+    "featured": false,
+    "span": "md",
+    "href": null
+  },
+  {
+    "id": "legal-ai",
+    "title": "Legal AI System",
+    "subtitle": "Legal document analysis",
+    "summary": "LLM-based legal document analysis and structured information extraction.",
+    "description": "An extraction pipeline that turns long legal texts into structured schemas for clauses, parties, dates, and obligations.",
+    "tech": ["Python", "LLM", "NLP", "Information Extraction"],
+    "featured": false,
+    "span": "sm",
+    "href": null
+  },
+  {
+    "id": "fitserno",
+    "title": "fitserno.com",
+    "subtitle": "Fitness OS",
+    "summary": "Full-stack fitness booking and calendar management platform.",
+    "description": "Scheduling, calendar, and session management for trainers and athletes. An end-to-end web product.",
+    "tech": ["Next.js", "React", "REST", "Calendar"],
+    "featured": false,
+    "span": "sm",
+    "href": "https://fitserno.com"
+  }
+]

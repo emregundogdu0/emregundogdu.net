@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, type FormEvent } from "react";
+import { useMemo, useState, type FormEvent } from "react";
 import { Check, Copy, Send } from "lucide-react";
 import { z } from "zod";
 import { Button } from "@/components/ui/button";
@@ -10,20 +10,25 @@ import { Textarea } from "@/components/ui/textarea";
 import { Reveal } from "@/components/motion/reveal";
 import { Section } from "@/components/layout/section";
 import { SocialIcons } from "@/components/layout/social-icons";
-import { site } from "@/lib/content";
-
-const schema = z.object({
-  name: z.string().trim().min(2, "Ad en az 2 karakter olmalı."),
-  email: z.string().trim().email("Geçerli bir e-posta girin."),
-  message: z.string().trim().min(12, "Mesaj en az 12 karakter olmalı."),
-});
+import { useLocale } from "@/i18n/locale-provider";
 
 export function ContactSection() {
+  const { site, ui } = useLocale();
   const [copied, setCopied] = useState(false);
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">(
     "idle",
   );
   const [errors, setErrors] = useState<Record<string, string>>({});
+
+  const schema = useMemo(
+    () =>
+      z.object({
+        name: z.string().trim().min(2, ui.validationName),
+        email: z.string().trim().email(ui.validationEmail),
+        message: z.string().trim().min(12, ui.validationMessage),
+      }),
+    [ui.validationName, ui.validationEmail, ui.validationMessage],
+  );
 
   async function copyEmail() {
     await navigator.clipboard.writeText(site.email);
@@ -69,14 +74,14 @@ export function ContactSection() {
   return (
     <Section
       id="contact"
-      eyebrow="Bağlantı"
-      title="İletişime Geç"
-      description="Bir ürün, staj sonrası iş birliği veya teknik konuşma için yazın."
+      eyebrow={ui.contactEyebrow}
+      title={ui.contactTitle}
+      description={ui.contactDescription}
     >
       <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
         <Reveal>
           <div className="rounded-2xl border border-white/8 bg-white/4 p-6 backdrop-blur-xl">
-            <p className="text-sm text-muted-foreground">E-posta</p>
+            <p className="text-sm text-muted-foreground">{ui.emailLabel}</p>
             <p className="mt-2 font-mono text-sm text-foreground">{site.email}</p>
             <Button
               type="button"
@@ -85,7 +90,7 @@ export function ContactSection() {
               className="mt-4 h-10 border-white/15"
             >
               {copied ? <Check className="size-4" /> : <Copy className="size-4" />}
-              {copied ? "Kopyalandı" : "E-postayı kopyala"}
+              {copied ? ui.copied : ui.copyEmail}
             </Button>
             <SocialIcons links={site.social} className="mt-8 flex gap-3" />
           </div>
@@ -98,7 +103,7 @@ export function ContactSection() {
             noValidate
           >
             <div className="grid gap-2">
-              <Label htmlFor="name">Ad</Label>
+              <Label htmlFor="name">{ui.nameLabel}</Label>
               <Input
                 id="name"
                 name="name"
@@ -114,7 +119,7 @@ export function ContactSection() {
               ) : null}
             </div>
             <div className="grid gap-2">
-              <Label htmlFor="email">E-posta</Label>
+              <Label htmlFor="email">{ui.emailLabel}</Label>
               <Input
                 id="email"
                 name="email"
@@ -131,7 +136,7 @@ export function ContactSection() {
               ) : null}
             </div>
             <div className="grid gap-2">
-              <Label htmlFor="message">Mesaj</Label>
+              <Label htmlFor="message">{ui.messageLabel}</Label>
               <Textarea
                 id="message"
                 name="message"
@@ -152,16 +157,16 @@ export function ContactSection() {
               className="h-11 bg-white text-zinc-950 hover:bg-zinc-200"
             >
               <Send className="size-4" />
-              {status === "sending" ? "Gönderiliyor…" : "Gönder"}
+              {status === "sending" ? ui.sending : ui.send}
             </Button>
             {status === "sent" ? (
               <p className="text-sm text-zinc-300" role="status">
-                Mesaj alındı. En kısa sürede dönüş yapacağım.
+                {ui.sentOk}
               </p>
             ) : null}
             {status === "error" ? (
               <p className="text-sm text-destructive" role="alert">
-                Gönderilemedi. E-postayı kopyalayıp doğrudan yazabilirsiniz.
+                {ui.sendError}
               </p>
             ) : null}
           </form>

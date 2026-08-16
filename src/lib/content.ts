@@ -1,5 +1,6 @@
 import aboutJson from "@/data/about.json";
 import achievementsJson from "@/data/achievements.json";
+import educationJson from "@/data/education.json";
 import experienceJson from "@/data/experience.json";
 import navJson from "@/data/nav.json";
 import partnersJson from "@/data/partners.json";
@@ -11,6 +12,7 @@ import technologiesJson from "@/data/technologies.json";
 import type {
   AboutContent,
   AchievementItem,
+  EducationItem,
   ExperienceItem,
   NavItem,
   PartnerItem,
@@ -24,6 +26,7 @@ import type {
 export const site = siteJson as SiteContent;
 export const nav = navJson as NavItem[];
 export const about = aboutJson as AboutContent;
+export const education = educationJson as EducationItem[];
 export const experience = experienceJson as ExperienceItem[];
 export const projects = projectsJson as ProjectItem[];
 export const achievements = achievementsJson as AchievementItem[];

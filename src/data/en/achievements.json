@@ -1,0 +1,16 @@
+[
+  {
+    "id": "future-minds-25",
+    "title": "Future Minds’25 AI Hackathon — 1st Place",
+    "date": "December 2025",
+    "icon": "trophy",
+    "body": "First place with an LLM-based dialogue and conversational AI system."
+  },
+  {
+    "id": "metu-game-jam",
+    "title": "METU Game Jam — 3rd Place",
+    "date": "March 2026",
+    "icon": "gamepad",
+    "body": "Third place with a Unity 3D game built in 48 hours."
+  }
+]

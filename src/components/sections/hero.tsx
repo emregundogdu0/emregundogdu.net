@@ -4,9 +4,11 @@ import Image from "next/image";
 import { ArrowDownRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SocialIcons } from "@/components/layout/social-icons";
-import { site } from "@/lib/content";
+import { useLocale } from "@/i18n/locale-provider";
 
 export function HeroSection() {
+  const { site, ui } = useLocale();
+
   return (
     <section
       id="hero"
@@ -14,7 +16,7 @@ export function HeroSection() {
     >
       <Image
         src="/photos/hero-cover.png"
-        alt="Emre Gündoğdu ofiste laptop başında çalışırken"
+        alt={ui.heroAlt}
         fill
         priority
         sizes="100vw"

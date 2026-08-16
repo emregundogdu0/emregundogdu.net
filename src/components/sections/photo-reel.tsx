@@ -3,14 +3,15 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform, type MotionValue } from "framer-motion";
 import Image from "next/image";
-import { photos } from "@/lib/content";
 import { EASE_EXPO } from "@/components/motion/easing";
+import { useLocale } from "@/i18n/locale-provider";
+import type { PhotoItem } from "@/types/content";
 
 function ReelRow({
   items,
   x,
 }: {
-  items: typeof photos;
+  items: PhotoItem[];
   x: MotionValue<string>;
 }) {
   return (
@@ -45,6 +46,7 @@ function ReelRow({
 }
 
 export function PhotoReel() {
+  const { photos, ui } = useLocale();
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -58,7 +60,7 @@ export function PhotoReel() {
   return (
     <section
       ref={ref}
-      aria-label="Yaşamdan kareler"
+      aria-label={ui.photoReelAria}
       className="relative overflow-hidden py-8 lg:py-14"
     >
       <div className="flex flex-col gap-4 sm:gap-5">

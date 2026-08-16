@@ -1,0 +1,27 @@
+[
+  {
+    "src": "/photos/work.jpg",
+    "alt": "Emre Gundogdu working on a laptop",
+    "caption": "Production"
+  },
+  {
+    "src": "/photos/talk.jpg",
+    "alt": "Supervised Learning talk on the METU NCC stage",
+    "caption": "Stage"
+  },
+  {
+    "src": "/photos/basketball.jpg",
+    "alt": "Basketball game in a METU NCC jersey",
+    "caption": "Basketball"
+  },
+  {
+    "src": "/photos/drums.jpg",
+    "alt": "Playing drums on stage",
+    "caption": "Drums"
+  },
+  {
+    "src": "/photos/life-1.jpg",
+    "alt": "Backstage",
+    "caption": "Rhythm"
+  }
+]

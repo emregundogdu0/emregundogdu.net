@@ -78,6 +78,16 @@ export type TechItem = {
   src: string;
 };
 
+export type EducationItem = {
+  id: string;
+  school: string;
+  program: string;
+  period: string;
+  location: string;
+  logo: string;
+  body: string;
+};
+
 export type PhotoItem = {
   src: string;
   alt: string;

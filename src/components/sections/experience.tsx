@@ -3,15 +3,17 @@
 import Image from "next/image";
 import { Reveal } from "@/components/motion/reveal";
 import { Section } from "@/components/layout/section";
-import { experience } from "@/lib/content";
+import { useLocale } from "@/i18n/locale-provider";
 
 export function ExperienceSection() {
+  const { experience, ui } = useLocale();
+
   return (
     <Section
       id="experience"
-      eyebrow="Kariyer"
-      title="Deneyimler"
-      description="Üretim ortamında AI sistemleri, kurumsal ürünler ve teknik liderlik."
+      eyebrow={ui.experienceEyebrow}
+      title={ui.experienceTitle}
+      description={ui.experienceDescription}
     >
       <ol className="relative space-y-5">
         {experience.map((item, index) => (
@@ -22,7 +24,7 @@ export function ExperienceSection() {
                   {item.logo ? (
                     <Image
                       src={item.logo}
-                      alt={`${item.company} logosu`}
+                      alt={`${item.company} logo`}
                       width={112}
                       height={48}
                       className="max-h-10 max-w-full object-contain"

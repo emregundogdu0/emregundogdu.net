@@ -1,0 +1,72 @@
+[
+  {
+    "id": "emy-studios",
+    "company": "Emy Software Studios",
+    "role": "Co-Founder & Lead Developer",
+    "period": "Ongoing",
+    "location": "METU KALTEV",
+    "logo": "/brand/emy-logo.png",
+    "highlights": [
+      "Building AI-assisted automations, enterprise CRM/ERP systems, and LLM assistants in the METU KALTEV ecosystem.",
+      "Enterprise web/mobile products for KKTC Chamber of Civil Engineers, Alfa Emlak, and Viptech."
+    ]
+  },
+  {
+    "id": "tamsdata-pm",
+    "company": "TAMSDATA Software Technologies Inc.",
+    "role": "AI Developer & Project Manager",
+    "period": "August 2025 – Present",
+    "location": "Live production",
+    "logo": "/partners/tamsdata.png",
+    "highlights": [
+      "Designing LLM and deep-learning systems for live environments.",
+      "Prompt engineering, backend integration, and end-to-end project management."
+    ]
+  },
+  {
+    "id": "tamsdata-intern",
+    "company": "TAMSDATA Software Technologies Inc.",
+    "role": "Software Developer Intern",
+    "period": "July 2025 – August 2025",
+    "location": "Computer Vision",
+    "logo": "/partners/tamsdata.png",
+    "highlights": [
+      "Computer-vision solutions with YOLO, OpenCV, and PyTorch.",
+      "Model evaluation workflows and experiment tracking."
+    ]
+  },
+  {
+    "id": "microsoft-ai",
+    "company": "Microsoft AI Innovators",
+    "role": "AI Intern",
+    "period": "Internship",
+    "location": "AI",
+    "logo": "/partners/microsoft-icon.svg",
+    "highlights": [
+      "Innovative AI technologies, LLM solutions, and applied AI systems."
+    ]
+  },
+  {
+    "id": "metu-ai",
+    "company": "METU AI Community / GDG",
+    "role": "Technical Lead",
+    "period": "October 2025 – Present",
+    "location": "Community",
+    "logo": "/partners/odtu-kaltev.svg",
+    "highlights": [
+      "Organizing AI/ML and LLM workshops.",
+      "Technical mentorship for students."
+    ]
+  },
+  {
+    "id": "metu-it",
+    "company": "METU NCC",
+    "role": "IT Leader Assistant",
+    "period": "September 2025 – December 2025",
+    "location": "Campus IT",
+    "logo": "/partners/kaltev.png",
+    "highlights": [
+      "Technical support and coordination for campus IT operations."
+    ]
+  }
+]
