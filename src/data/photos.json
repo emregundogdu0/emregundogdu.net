@@ -1,0 +1,27 @@
+[
+  {
+    "src": "/photos/work.jpg",
+    "alt": "Emre Gündoğdu laptop başında çalışırken",
+    "caption": "Üretim"
+  },
+  {
+    "src": "/photos/talk.jpg",
+    "alt": "METU NCC sahnesinde Supervised Learning sunumu",
+    "caption": "Sahne"
+  },
+  {
+    "src": "/photos/basketball.jpg",
+    "alt": "METU NCC formasında basketbol maçı",
+    "caption": "Basketbol"
+  },
+  {
+    "src": "/photos/drums.jpg",
+    "alt": "Sahne performansında bateri",
+    "caption": "Bateri"
+  },
+  {
+    "src": "/photos/life-1.jpg",
+    "alt": "Sahne arkası",
+    "caption": "Ritim"
+  }
+]

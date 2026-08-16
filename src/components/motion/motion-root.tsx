@@ -1,0 +1,8 @@
+"use client";
+
+import type { ReactNode } from "react";
+import { MotionConfig } from "framer-motion";
+
+export function MotionRoot({ children }: { children: ReactNode }) {
+  return <MotionConfig reducedMotion="never">{children}</MotionConfig>;
+}

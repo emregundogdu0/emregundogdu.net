@@ -1,0 +1,72 @@
+[
+  {
+    "id": "emy-studios",
+    "company": "Emy Software Studios",
+    "role": "Co-Founder & Lead Developer",
+    "period": "Devam ediyor",
+    "location": "ODTÜ KALTEV",
+    "logo": "/brand/emy-logo.png",
+    "highlights": [
+      "ODTÜ KALTEV ekosisteminde AI destekli otomasyonlar, kurumsal CRM/ERP sistemleri ve LLM asistanları geliştirme.",
+      "KKTC İnşaat Mühendisleri Odası, Alfa Emlak ve Viptech gibi kurumsal web/mobil ürünler."
+    ]
+  },
+  {
+    "id": "tamsdata-pm",
+    "company": "TAMSDATA Software Technologies Inc.",
+    "role": "AI Developer & Project Manager",
+    "period": "Ağustos 2025 – Günümüz",
+    "location": "Canlı üretim",
+    "logo": "/partners/tamsdata.png",
+    "highlights": [
+      "Canlı ortamlar için LLM ve derin öğrenme sistemleri tasarımı.",
+      "Prompt mühendisliği, backend entegrasyonu ve uçtan uca proje yönetimi."
+    ]
+  },
+  {
+    "id": "tamsdata-intern",
+    "company": "TAMSDATA Software Technologies Inc.",
+    "role": "Software Developer Intern",
+    "period": "Temmuz 2025 – Ağustos 2025",
+    "location": "Computer Vision",
+    "logo": "/partners/tamsdata.png",
+    "highlights": [
+      "YOLO, OpenCV ve PyTorch ile bilgisayarlı görü çözümleri.",
+      "Model değerlendirme iş akışları ve deney takibi."
+    ]
+  },
+  {
+    "id": "microsoft-ai",
+    "company": "Microsoft AI Innovators",
+    "role": "AI Intern",
+    "period": "Staj",
+    "location": "AI",
+    "logo": "/partners/microsoft-icon.svg",
+    "highlights": [
+      "Yenilikçi AI teknolojileri, LLM çözümleri ve uygulamalı yapay zeka sistemleri."
+    ]
+  },
+  {
+    "id": "metu-ai",
+    "company": "ODTÜ AI Community / GDG",
+    "role": "Technical Lead",
+    "period": "Ekim 2025 – Günümüz",
+    "location": "Topluluk",
+    "logo": "/partners/odtu-kaltev.svg",
+    "highlights": [
+      "AI/ML ve LLM atölyeleri düzenleme.",
+      "Öğrencilere teknik mentörlük."
+    ]
+  },
+  {
+    "id": "metu-it",
+    "company": "ODTÜ NCC",
+    "role": "IT Leader Assistant",
+    "period": "Eylül 2025 – Aralık 2025",
+    "location": "Kampüs IT",
+    "logo": "/partners/kaltev.png",
+    "highlights": [
+      "Kampüs IT operasyonlarına teknik destek ve koordinasyon."
+    ]
+  }
+]

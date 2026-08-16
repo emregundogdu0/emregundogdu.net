@@ -1,0 +1,8 @@
+[
+  { "label": "Hakkımda", "href": "#about" },
+  { "label": "Deneyim", "href": "#experience" },
+  { "label": "Projeler", "href": "#projects" },
+  { "label": "Başarılar", "href": "#achievements" },
+  { "label": "Yetkinlikler", "href": "#skills" },
+  { "label": "İletişim", "href": "#contact" }
+]

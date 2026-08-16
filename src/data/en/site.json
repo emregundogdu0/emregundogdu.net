@@ -1,0 +1,34 @@
+{
+  "name": "Emre Gündoğdu",
+  "role": "AI Developer & Project Manager | Computer Engineering @ METU NCC",
+  "bio": "Computer engineer and founder working on artificial intelligence, large language models, computer vision, and high-performance software architecture.",
+  "summary": "I study Computer Engineering at METU Northern Cyprus Campus. At TAMSDATA I build live LLM and computer-vision systems as an AI Developer & Project Manager, and as co-founder of Emy Software Studios I ship enterprise AI products. A Microsoft AI Innovators internship, Future Minds’25 first place, and CRM/ERP systems in production are part of that work. Software that leaves the lab and reaches the field.",
+  "email": "emre.gundogdu016@gmail.com",
+  "location": "METU Northern Cyprus Campus",
+  "cta": {
+    "primary": { "label": "View My Projects", "href": "#projects" },
+    "secondary": { "label": "Get in Touch", "href": "#contact" }
+  },
+  "social": [
+    {
+      "id": "github",
+      "label": "GitHub",
+      "href": "https://github.com/emregundogdu"
+    },
+    {
+      "id": "linkedin",
+      "label": "LinkedIn",
+      "href": "https://www.linkedin.com/in/emre-gundogdu"
+    },
+    {
+      "id": "huggingface",
+      "label": "Hugging Face",
+      "href": "https://huggingface.co/emregundogdu"
+    },
+    {
+      "id": "email",
+      "label": "Email",
+      "href": "mailto:emre.gundogdu016@gmail.com"
+    }
+  ]
+}

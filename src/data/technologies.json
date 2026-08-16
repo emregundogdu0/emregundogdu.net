@@ -1,0 +1,12 @@
+[
+  { "id": "python", "name": "Python", "src": "/technologies/python.webp" },
+  { "id": "typescript", "name": "TypeScript", "src": "/technologies/typescript.png" },
+  { "id": "javascript", "name": "JavaScript", "src": "/technologies/javascript.png" },
+  { "id": "c", "name": "C", "src": "/technologies/c.webp" },
+  { "id": "cpp", "name": "C++", "src": "/technologies/cpp.png" },
+  { "id": "java", "name": "Java", "src": "/technologies/java.webp" },
+  { "id": "nextjs", "name": "Next.js", "src": "/technologies/nextjs.webp" },
+  { "id": "pytorch", "name": "PyTorch", "src": "/technologies/pytorch.webp" },
+  { "id": "tensorflow", "name": "TensorFlow", "src": "/technologies/tensorflow.webp" },
+  { "id": "cloudflare", "name": "Cloudflare", "src": "/technologies/cloudflare.png" }
+]

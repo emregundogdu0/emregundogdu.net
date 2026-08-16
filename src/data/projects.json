@@ -1,0 +1,57 @@
+[
+  {
+    "id": "emy-solutions",
+    "title": "Emy Software Studios Çözümleri",
+    "subtitle": "Kurumsal AI & CRM",
+    "summary": "KKTC İMO CRM paneli, Alfa Emlak AI satış asistanı ve Viptech web ürünleri. Kurumsal süreçleri LLM ve otomasyonla hızlandıran üretim sistemleri.",
+    "description": "ODTÜ KALTEV bünyesinde geliştirilen ürün ailesi: KKTC İnşaat Mühendisleri Odası için CRM paneli, Alfa Emlak için AI satış ajanı ve Viptech kurumsal web. Ortak nokta: gerçek kullanıcı, gerçek veri, canlı ortam.",
+    "tech": ["Next.js", "Python", "LLM", "CRM/ERP", "PostgreSQL"],
+    "featured": true,
+    "span": "lg",
+    "href": null
+  },
+  {
+    "id": "cyper",
+    "title": "Cyper",
+    "subtitle": "AI-Powered Service Platform",
+    "summary": "Akıllı hizmet ve öneri eşleştirme platformu.",
+    "description": "Kullanıcı ihtiyacını anlayan, hizmetleri sıralayan ve öneri döngüsünü sürekli iyileştiren AI destekli eşleştirme katmanı.",
+    "tech": ["TypeScript", "RAG", "Recommendation", "Node.js"],
+    "featured": false,
+    "span": "md",
+    "href": null
+  },
+  {
+    "id": "ncc-hocam",
+    "title": "NCC Hocam",
+    "subtitle": "AI Student Platform",
+    "summary": "Akademik asistan ve ders optimizasyon platformu.",
+    "description": "Öğrencilerin ders planını, kaynakları ve soru-cevap döngüsünü tek yerde toplayan akademik AI asistanı.",
+    "tech": ["Next.js", "LLM", "RAG", "Education"],
+    "featured": false,
+    "span": "md",
+    "href": null
+  },
+  {
+    "id": "legal-ai",
+    "title": "Legal AI System",
+    "subtitle": "Hukuki belge analizi",
+    "summary": "LLM tabanlı hukuki belge analiz ve yapılandırılmış bilgi çıkarma sistemi.",
+    "description": "Uzun hukuki metinlerden madde, taraf, tarih ve yükümlülükleri yapılandırılmış şemaya dönüştüren çıkarım hattı.",
+    "tech": ["Python", "LLM", "NLP", "Information Extraction"],
+    "featured": false,
+    "span": "sm",
+    "href": null
+  },
+  {
+    "id": "fitserno",
+    "title": "fitserno.com",
+    "subtitle": "Fitness OS",
+    "summary": "Full-stack fitness randevu ve takvim yönetim platformu.",
+    "description": "Antrenör ve sporcu için randevu, takvim ve seans yönetimi. Uçtan uca web ürünü.",
+    "tech": ["Next.js", "React", "REST", "Calendar"],
+    "featured": false,
+    "span": "sm",
+    "href": "https://fitserno.com"
+  }
+]

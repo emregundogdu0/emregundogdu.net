@@ -1,0 +1,19 @@
+{
+  "title": "Hakkımda",
+  "eyebrow": "Kampüs, sahne, saha",
+  "intro": "ODTÜ Kuzey Kıbrıs Kampüsü Bilgisayar Mühendisliği öğrencisiyim. Sistem seviyesinden üretim ortamındaki AI ürünlerine kadar, okunabilir ve ölçeklenebilir yazılımlar kuruyorum.",
+  "focus": [
+    {
+      "title": "Sistem & Performans",
+      "body": "C ve Python ile sistem seviyesi programlama, veri yapıları optimizasyonu ve yüksek performanslı yazılım mimarileri."
+    },
+    {
+      "title": "AI / ML Sistemleri",
+      "body": "LLM, bilgisayarlı görü ve uçtan uca model-servis entegrasyonu: araştırma değil, canlıya çıkan sistemler."
+    },
+    {
+      "title": "Ritim & Disiplin",
+      "body": "Lisanslı basketbolcu, lisanslı yüzücü ve bir müzik grubunda baterist. Disiplin, takım çalışması ve ritim duygusu mühendisliğe de yansır."
+    }
+  ]
+}

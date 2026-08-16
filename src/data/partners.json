@@ -1,0 +1,13 @@
+[
+  { "id": "emy", "name": "Emy Software Studios", "src": "/brand/emy-logo.png" },
+  { "id": "tamsdata", "name": "TAMSDATA", "src": "/partners/tamsdata.png" },
+  { "id": "microsoft", "name": "Microsoft", "src": "/partners/microsoft.svg" },
+  { "id": "kaltev", "name": "ODTÜ KALTEV", "src": "/partners/kaltev.png" },
+  { "id": "imo", "name": "KKTC İMO", "src": "/partners/imo.png" },
+  { "id": "alfa", "name": "Alfa Emlak", "src": "/partners/alfa.png" },
+  { "id": "viptech", "name": "Viptech", "src": "/partners/viptech.png" },
+  { "id": "kibris-emlak", "name": "Kıbrıs Emlak Sitesi", "src": "/partners/kibris-emlak.png" },
+  { "id": "ncc-hocam", "name": "NCC Hocam", "src": "/partners/ncc-hocam.png" },
+  { "id": "onat-serin", "name": "Onat Serin", "src": "/partners/onat-serin.png" },
+  { "id": "sharaf", "name": "Sharaf Electro Store", "src": "/partners/sharaf.png" }
+]

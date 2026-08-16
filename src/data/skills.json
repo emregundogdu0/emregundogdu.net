@@ -1,0 +1,36 @@
+[
+  {
+    "id": "languages",
+    "title": "Languages",
+    "items": ["Python", "TypeScript", "JavaScript", "C", "C++", "Java"]
+  },
+  {
+    "id": "ai",
+    "title": "AI & ML / NLP",
+    "items": [
+      "PyTorch",
+      "TensorFlow",
+      "OpenAI API",
+      "Hugging Face",
+      "LangChain",
+      "RAG",
+      "Prompt Engineering",
+      "Multi-Agent Systems"
+    ]
+  },
+  {
+    "id": "cv",
+    "title": "Computer Vision",
+    "items": ["OpenCV", "YOLO", "ResNet", "EfficientNet"]
+  },
+  {
+    "id": "web",
+    "title": "Web & Backend",
+    "items": ["Next.js", "React", "Node.js", "REST APIs", "Tailored CRM/ERP Systems"]
+  },
+  {
+    "id": "tools",
+    "title": "Tools & Infra",
+    "items": ["Docker", "Git", "PostgreSQL", "Cloudflare", "Power BI", "Unity", "Jupyter"]
+  }
+]
