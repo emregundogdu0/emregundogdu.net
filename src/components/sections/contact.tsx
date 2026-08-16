@@ -54,12 +54,11 @@ export function ContactSection() {
     setErrors({});
     setStatus("sending");
     try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(parsed.data),
-      });
-      if (!response.ok) throw new Error("failed");
+      const subject = encodeURIComponent(`Portfolio contact — ${parsed.data.name}`);
+      const body = encodeURIComponent(
+        `${parsed.data.message}\n\n— ${parsed.data.name}\n${parsed.data.email}`,
+      );
+      window.location.href = `mailto:${site.email}?subject=${subject}&body=${body}`;
       setStatus("sent");
       form.reset();
     } catch {
