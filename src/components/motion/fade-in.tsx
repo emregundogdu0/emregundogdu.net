@@ -31,3 +31,52 @@ export function FadeIn({
     </motion.div>
   );
 }
+
+type StaggerProps = Omit<HTMLMotionProps<"div">, "children"> & {
+  children: ReactNode;
+};
+
+export function Stagger({ className, children, ...props }: StaggerProps) {
+  return (
+    <motion.div
+      className={cn(className)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, margin: "-80px" }}
+      variants={{
+        hidden: {},
+        show: {
+          transition: {
+            staggerChildren: 0.08,
+          },
+        },
+      }}
+      {...props}
+    >
+      {children}
+    </motion.div>
+  );
+}
+
+type StaggerItemProps = Omit<HTMLMotionProps<"div">, "children"> & {
+  children: ReactNode;
+};
+
+export function StaggerItem({ className, children, ...props }: StaggerItemProps) {
+  return (
+    <motion.div
+      className={cn(className)}
+      variants={{
+        hidden: { opacity: 0, y: 20 },
+        show: {
+          opacity: 1,
+          y: 0,
+          transition: { duration: 0.5, ease: EASE_EXPO },
+        },
+      }}
+      {...props}
+    >
+      {children}
+    </motion.div>
+  );
+}

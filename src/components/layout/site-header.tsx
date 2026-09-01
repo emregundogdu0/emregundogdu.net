@@ -46,6 +46,14 @@ export function SiteHeader() {
         </nav>
 
         <div className="flex items-center gap-2">
+          <Button
+            nativeButton={false}
+            render={<a href="/emy-studios" />}
+            variant="outline"
+            className="hidden h-10 px-4 text-xs font-semibold uppercase tracking-[0.18em] text-white hover:bg-white/10 xl:inline-flex"
+          >
+            emy
+          </Button>
           <LanguageToggle />
           <Button
             nativeButton={false}
@@ -83,6 +91,13 @@ export function SiteHeader() {
                     {item.label}
                   </a>
                 ))}
+                <a
+                  href="/emy-studios"
+                  onClick={() => setOpen(false)}
+                  className="rounded-lg px-3 py-3 text-sm font-semibold uppercase tracking-[0.18em] text-zinc-200 hover:bg-white/5 hover:text-white"
+                >
+                  emy
+                </a>
                 <Button
                   nativeButton={false}
                   render={<a href="#contact" onClick={() => setOpen(false)} />}

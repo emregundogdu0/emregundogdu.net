@@ -1,11 +1,7 @@
 import type { Metadata } from "next";
 import { Geist_Mono, Instrument_Serif, Inter } from "next/font/google";
-import { SiteFooter } from "@/components/layout/site-footer";
-import { SiteHeader } from "@/components/layout/site-header";
-import { SkipToContent } from "@/components/layout/skip-to-content";
 import { MotionRoot } from "@/components/motion/motion-root";
 import { SmoothScroll } from "@/components/motion/smooth-scroll";
-import { NeuralNoise } from "@/components/ui/neural-noise";
 import { LocaleProvider } from "@/i18n/locale-provider";
 import { dictionaries } from "@/i18n/dictionaries";
 import "./globals.css";
@@ -52,12 +48,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <MotionRoot>
           <LocaleProvider>
             <SmoothScroll />
-            <NeuralNoise color={[0.133, 0.827, 0.933]} opacity={0.85} speed={0.001} />
             <div className="relative z-10">
-              <SkipToContent />
-              <SiteHeader />
               {children}
-              <SiteFooter />
             </div>
           </LocaleProvider>
         </MotionRoot>

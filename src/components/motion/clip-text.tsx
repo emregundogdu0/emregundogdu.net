@@ -1,6 +1,6 @@
 "use client";
 
-import type { ElementType, ReactNode } from "react";
+import { createElement, type ElementType, type ReactNode } from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { EASE_EXPO } from "@/components/motion/easing";
@@ -53,9 +53,10 @@ export function SplitHeadline({
 }: SplitHeadlineProps) {
   const words = text.split(" ");
 
-  return (
-    <Tag className={className}>
-      {words.map((word, index) => (
+  return createElement(
+    Tag,
+    { className },
+    words.map((word, index) => (
         <ClipText
           key={`${word}-${index}`}
           delay={delay + index * 0.07}
@@ -63,8 +64,7 @@ export function SplitHeadline({
         >
           {word}
         </ClipText>
-      ))}
-    </Tag>
+      )),
   );
 }
 
