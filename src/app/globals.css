@@ -100,6 +100,35 @@
   --radius: 1rem;
 }
 
+.emy-site {
+  --background: #050507;
+  --background-secondary: #030305;
+  --foreground: #f8fafc;
+  --foreground-soft: #f5f3ff;
+  --muted-foreground: #d6d3e8;
+  --accent: #a78bfa;
+  --accent-foreground: #050507;
+  --accent-electric: #c4b5fd;
+  --primary: #7c3aed;
+  --primary-bright: #a78bfa;
+  --primary-foreground: #ffffff;
+  --border: rgb(255 255 255 / 12%);
+  --border-subtle: rgb(255 255 255 / 8%);
+  color: var(--foreground);
+}
+
+.emy-site .text-muted-foreground {
+  color: var(--muted-foreground);
+}
+
+.emy-site .text-foreground-soft {
+  color: var(--foreground-soft);
+}
+
+.emy-site .text-accent {
+  color: var(--accent);
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;

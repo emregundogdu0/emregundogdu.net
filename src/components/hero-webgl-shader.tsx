@@ -34,7 +34,7 @@ export function HeroWebGLShader({ className }: HeroWebGLShaderProps) {
 
       void main() {
         vec2 p = (gl_FragCoord.xy * 2.0 - resolution) / min(resolution.x, resolution.y);
-        p.y += 0.08;
+        p.y -= 0.12;
 
         float d = length(p) * distortion;
         float rx = p.x * (1.0 + d);
